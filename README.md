@@ -60,10 +60,10 @@ Contains data on the Sparkify platform user.
 Type | Column | Type
 -----|--------|------
 PK | user_id | int
- | first_name | varchar
- | last_name | varchar
- | gender | varchar
- | level | varchar
+  | first_name | varchar
+  | last_name | varchar
+  | gender | varchar
+  | level | varchar
 
 Table: _song_
 
@@ -72,10 +72,10 @@ Contains song data.
 Type | Column | Type
 -----|--------|------
 PK | song_id | varchar
- | title | varchar
+  | title | varchar
  FK | artist_id | varchar
- | year | int
- | duration | decimal
+  | year | int
+  | duration | decimal
  
  
 Table: _artist_
@@ -85,10 +85,10 @@ Contains artist data.
 Type | Column | Type
 -----|--------|------
 PK | artist_id | varchar
- | name | varchar
- | location | varchar
- | latitude | varchar
- | longitude | varchar
+  | name | varchar
+  | location | varchar
+  | latitude | varchar
+  | longitude | varchar
 
 Table: _time_
 
@@ -97,12 +97,12 @@ Contains timestamp data from song listens as well as other time related.
 Type | Column | Type
 -----|--------|------
 PK | start_time | timestamp
-| hour | int
-| day | int
-| week | int
-| month | int
-| year | int
-| weekday | int
+ | hour | int
+ | day | int
+ | week | int
+ | month | int
+ | year | int
+ | weekday | int
 
 
 ## ETL Process
