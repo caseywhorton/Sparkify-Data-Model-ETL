@@ -46,12 +46,12 @@ Type | Column | Type
 PK | songplay_id | int
 FK | start_time | timestamp
 FK | user_id | int
- | level | varchar
- FK | song_id | varchar
- FK | artist_id | varchar
-  | session_id | varchar
-   | location | varchar
-    | user_agent | varchar
+null | level | varchar
+FK | song_id | varchar
+FK | artist_id | varchar
+null | session_id | varchar
+null| location | varchar
+null | user_agent | varchar
 
 Table: _user_ 
 
@@ -60,10 +60,10 @@ Contains data on the Sparkify platform user.
 Type | Column | Type
 -----|--------|------
 PK | user_id | int
-  | first_name | varchar
-  | last_name | varchar
-  | gender | varchar
-  | level | varchar
+null | first_name | varchar
+null | last_name | varchar
+null | gender | varchar
+null | level | varchar
 
 Table: _song_
 
@@ -72,10 +72,10 @@ Contains song data.
 Type | Column | Type
 -----|--------|------
 PK | song_id | varchar
-  | title | varchar
- FK | artist_id | varchar
-  | year | int
-  | duration | decimal
+null | title | varchar
+FK | artist_id | varchar
+null | year | int
+null | duration | decimal
  
  
 Table: _artist_
@@ -85,10 +85,10 @@ Contains artist data.
 Type | Column | Type
 -----|--------|------
 PK | artist_id | varchar
-  | name | varchar
-  | location | varchar
-  | latitude | varchar
-  | longitude | varchar
+null | name | varchar
+null | location | varchar
+null | latitude | varchar
+null | longitude | varchar
 
 Table: _time_
 
@@ -97,12 +97,12 @@ Contains timestamp data from song listens as well as other time related.
 Type | Column | Type
 -----|--------|------
 PK | start_time | timestamp
- | hour | int
- | day | int
- | week | int
- | month | int
- | year | int
- | weekday | int
+null | hour | int
+null | day | int
+null | week | int
+null | month | int
+null | year | int
+null | weekday | int
 
 
 ## ETL Process
